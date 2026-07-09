@@ -15,12 +15,15 @@
     </properties>
 
     <dependencies>
+        <!-- JUnit 5 -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>5.10.0</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- Mockito -->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
@@ -62,8 +65,8 @@
                         <configuration>
                             <!-- Исключаем классы из отчёта -->
                             <excludes>
-                                <exclude>praktikum/Database.class</exclude>
-                                <exclude>praktikum/Praktikum.class</exclude>
+                                <exclude>**/Database.class</exclude>
+                                <exclude>**/Praktikum.class</exclude>
                             </excludes>
                         </configuration>
                     </execution>
@@ -87,8 +90,8 @@
                             </rules>
                             <!-- Исключаем классы из проверки -->
                             <excludes>
-                                <exclude>praktikum/Database.class</exclude>
-                                <exclude>praktikum/Praktikum.class</exclude>
+                                <exclude>**/Database.class</exclude>
+                                <exclude>**/Praktikum.class</exclude>
                             </excludes>
                         </configuration>
                     </execution>
